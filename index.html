@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision Solutions - Solusi Teknologi Terdepan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <span class="brand-name">TechVision</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#testimonial" class="nav-link">Testimonial</a>
+                <a href="#team" class="nav-link">Our Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button id="loginBtn" class="btn btn-primary">Login</button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <button id="closeModal" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password" required>
+                </div>
+                
+                <div class="form-footer">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember">
+                        <span>Ingat saya</span>
+                    </label>
+                    <a href="#" class="link">Lupa password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            
+            <div class="modal-footer">
+                <p>Belum punya akun? <a href="#" class="link">Daftar di sini</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Carousel -->
+    <section id="home" class="hero-section">
+        <div class="carousel">
+            <div class="carousel-item active" data-bg="gradient-1">
+                <div class="carousel-content">
+                    <h1 class="hero-title">Solusi Teknologi untuk Masa Depan Bisnis Anda</h1>
+                    <p class="hero-subtitle">Kami menyediakan layanan IT terbaik untuk membantu bisnis Anda tumbuh dan berkembang di era digital.</p>
+                    <button class="btn btn-primary btn-lg">Pelajari Lebih Lanjut</button>
+                </div>
+            </div>
+            
+            <div class="carousel-item" data-bg="gradient-2">
+                <div class="carousel-content">
+                    <h1 class="hero-title">Inovasi Tanpa Batas untuk Perusahaan Anda</h1>
+                    <p class="hero-subtitle">Dengan teknologi terkini, kami membantu perusahaan mencapai tujuan bisnis mereka dengan lebih efisien.</p>
+                    <button class="btn btn-success btn-lg">Mulai Proyek Anda</button>
+                </div>
+            </div>
+            
+            <div class="carousel-item" data-bg="gradient-3">
+                <div class="carousel-content">
+                    <h1 class="hero-title">Tim Ahli dengan Pengalaman Bertahun-tahun</h1>
+                    <p class="hero-subtitle">Percayakan kebutuhan IT perusahaan Anda kepada tim profesional kami yang berpengalaman.</p>
+                    <button class="btn btn-purple btn-lg">Hubungi Kami</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-btn prev" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="carousel-indicators" id="carouselIndicators">
+            <button class="indicator active" data-index="0"></button>
+            <button class="indicator" data-index="1"></button>
+            <button class="indicator" data-index="2"></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Kami</h2>
+                <p class="section-subtitle">TechVision Solutions adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi digital inovatif untuk bisnis di berbagai industri.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Mengapa Memilih Kami?</h3>
+                    <p>Dengan lebih dari 10 tahun pengalaman di industri IT, kami telah membantu ratusan perusahaan meningkatkan efisiensi operasional dan mencapai tujuan bisnis mereka melalui solusi teknologi yang tepat.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Tim Profesional</h4>
+                                <p>Tim ahli kami terdiri dari developer, designer, dan konsultan IT yang berpengalaman.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Teknologi Terkini</h4>
+                                <p>Kami menggunakan teknologi terbaru untuk memastikan solusi yang kami berikan selalu up-to-date.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Dukungan 24/7</h4>
+                                <p>Layanan dukungan teknis kami tersedia 24 jam untuk memastikan bisnis Anda berjalan lancar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Layanan Kami</h2>
+                <p class="section-subtitle">Kami menawarkan berbagai layanan IT untuk memenuhi kebutuhan bisnis Anda di era digital.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon icon-blue">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Pengembangan Web & Aplikasi</h3>
+                    <p>Kami mengembangkan website dan aplikasi mobile yang responsif, user-friendly, dan sesuai dengan kebutuhan bisnis Anda.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon icon-green">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Solusi Cloud</h3>
+                    <p>Layanan cloud computing untuk meningkatkan skalabilitas, keamanan, dan efisiensi infrastruktur IT perusahaan Anda.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon icon-purple">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Keamanan Siber</h3>
+                    <p>Kami menyediakan solusi keamanan siber komprehensif untuk melindungi data dan sistem perusahaan dari ancaman digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Blog & Artikel</h2>
+                <p class="section-subtitle">Tetap update dengan tren teknologi terbaru dan tips untuk mengoptimalkan bisnis Anda.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Blog Post">
+                    <div class="blog-content">
+                        <span class="blog-tag tag-blue">Teknologi</span>
+                        <h3>5 Tren Teknologi yang Akan Mengubah Bisnis di 2024</h3>
+                        <p>Pelajari tentang teknologi terbaru yang akan mempengaruhi cara bisnis beroperasi di tahun depan.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Blog Post">
+                    <div class="blog-content">
+                        <span class="blog-tag tag-green">Keamanan</span>
+                        <h3>Cara Melindungi Data Perusahaan dari Serangan Siber</h3>
+                        <p>Tips praktis untuk meningkatkan keamanan data perusahaan Anda di era digital.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Blog Post">
+                    <div class="blog-content">
+                        <span class="blog-tag tag-purple">Pengembangan</span>
+                        <h3>Membangun Aplikasi Mobile yang Sukses: Panduan Lengkap</h3>
+                        <p>Langkah-langkah penting dalam mengembangkan aplikasi mobile yang user-friendly dan sukses di pasar.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-primary">Lihat Semua Artikel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apa Kata Klien Kami</h2>
+                <p class="section-subtitle">Dengarkan pengalaman klien yang telah menggunakan layanan kami.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar avatar-blue">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Ahmad Rizki</h4>
+                            <p>CEO, PT Maju Jaya</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"TechVision Solutions membantu kami mengembangkan sistem manajemen yang sangat efisien. Tim mereka profesional dan responsif."</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar avatar-green">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sari Dewi</h4>
+                            <p>Direktur, Global Retail</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Aplikasi e-commerce yang dikembangkan oleh TechVision meningkatkan penjualan online kami sebesar 45% dalam 3 bulan pertama."</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar avatar-purple">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Budi Santoso</h4>
+                            <p>Manajer IT, Bank Sejahtera</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Solusi keamanan siber dari TechVision sangat komprehensif. Kami merasa lebih aman dari ancaman digital setelah bekerja sama dengan mereka."</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tim Kami</h2>
+                <p class="section-subtitle">Kenali tim profesional yang akan membantu mewujudkan solusi teknologi untuk bisnis Anda.</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/umam.jpg" alt="Khotibul Umam">
+                    </div>
+                    <h3>Khotibul Umam</h3>
+                    <p class="team-role">102240059</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://ui-avatars.com/api/?name=Muhammad+Yusuf&size=200&background=10b981&color=fff" alt="Muhammad Yusuf">
+                    </div>
+                    <h3>Muhammad Yusuf</h3>
+                    <p class="team-role">CTO</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/gilang.jpg" alt="Gilang Ardyansyah">
+                    </div>
+                    <h3>Gilang Ardyansyah</h3>
+                    <p class="team-role">102240057</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/april.jpg" alt="Aprilia Sahara">
+                    </div>
+                    <h3>Aprilia Sahara</h3>
+                    <p class="team-role">102240042</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/defi.jpg" alt="Defi Rismawati">
+                    </div>
+                    <h3>Defi Rismawati</h3>
+                    <p class="team-role">102240045</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Siap untuk berbicara tentang proyek Anda? Hubungi kami dan kami akan dengan senang hati membantu.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Alamat</h4>
+                                <p>Jl. Karangdowo No.9, Kemoren, Karangdowo, Kec. Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Telepon</h4>
+                                <p>+62 851 8091 4036</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@techvision.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Ikuti Kami</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon icon-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon icon-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon icon-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon icon-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Kirim Pesan</h3>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" placeholder="Masukkan email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" placeholder="Masukkan subjek" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h3 class="map-title">Lokasi Kami</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.412165273885!2d109.63610717430942!3d-6.960609868148727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITSNU%20Pekalongan!5e0!3m2!1sid!2sid!4v1760628380454!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <div class="logo-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="brand-name">TechVision</span>
+                    </div>
+                    <p>Solusi teknologi terdepan untuk bisnis masa depan Anda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Pengembangan Web</a></li>
+                        <li><a href="#">Aplikasi Mobile</a></li>
+                        <li><a href="#">Solusi Cloud</a></li>
+                        <li><a href="#">Keamanan Siber</a></li>
+                        <li><a href="#">Konsultasi IT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Berlangganan Newsletter</h4>
+                    <p>Dapatkan update terbaru tentang teknologi dan penawaran khusus.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Masukkan email">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision Solutions. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
